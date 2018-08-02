@@ -5,7 +5,7 @@
     "Vue",
     "tooltip"
   ],
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "芊野 <free.nan.sky@gmail.com>",
   "private": false,
   "main": "lib/index.com.min.js",
@@ -17,6 +17,11 @@
     "build:theme": "gulp build",
     "build": "npm run clear && npm run build:cpt && npm run build:theme"
   },
+  "files": [
+    "docs",
+    "lib",
+    "src"
+  ],
   "peerDependencies": {
     "vue": "^2.5.16"
   },

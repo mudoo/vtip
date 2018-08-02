@@ -243,8 +243,9 @@ export default {
         : computeCoordinateBaseEdge(placementInfo, arrowsSize)
       this.setArrowsPos(coordinate)
       this.placement = coordinate.placement
-      const x = coordinate.x + containerNode.scrollLeft
-      const y = coordinate.y + containerNode.scrollTop
+      // position absolute 无需加上滚动距离
+      const x = coordinate.x
+      const y = coordinate.y
       this.$el.style.transform = `translate3d(${x}px, ${y}px, 0)`
     },
 
